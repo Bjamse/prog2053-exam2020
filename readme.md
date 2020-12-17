@@ -1,3 +1,4 @@
+Student nr: 10062
 # PROG2053 eksamen v2020
 * Lag en FORK av dette repositoriet og gi meg leserettigheter (aland.a.mendoza@ntnu.no). Det som er i repositoriet på slutten av eksamen teller som din besvarelse.
 * Legg inn studentnummeret ditt øverst i readme.md fila.
