@@ -8,11 +8,13 @@ class EditUser extends LitElement {
     }
 
     render() {
-
+        if (this.user.uid == undefined){
+            return html``;
+        }
         return html`
             <form onsubmit="javascript: return false;" id="userForm" method="POST">
                 <label for="uid">UNIQ id</label> <input id="uid" name="uid" value="${this.user.uid}">
-<br>    
+                <br>    
                 <label for="username">Username</label>
                     <input id="username" name="uname" type="text" value="${this.user.uname}">
                     <br>
@@ -42,7 +44,8 @@ class EditUser extends LitElement {
             body: formData
         }).then(res=>res.json())
             .then(data=>{
-                data.status=='success' ?console.log("success'"):console.log("no success'");
+                data.status=='success' ?(console.log("success'")):console.log("no success'");
+                window.location.href = window.location.pathname;
             })
     }
 
